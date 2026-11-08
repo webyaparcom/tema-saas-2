@@ -1,0 +1,45 @@
+{
+  "name": {
+    "tr": "Kurumsal",
+    "en": "Company",
+    "ar": "الشركة"
+  },
+  "status": "play",
+  "category": "",
+  "id": "yvi9dlb59o",
+  "url": "",
+  "path": "kurumsal",
+  "index": 7,
+  "desing": {
+    "header": [],
+    "body": [
+      "t2in01",
+      "2kvmo8"
+    ],
+    "footer": []
+  },
+  "pathnext": "",
+  "description": {
+    "tr": "Dalgaboard hakkında kısa kurumsal bilgi: vizyon, misyon ve çalışma ilkelerimiz.",
+    "en": "A short company profile of Dalgaboard: our vision, mission and working principles.",
+    "ar": "نبذة مؤسسية قصيرة عن دالغابورد: رؤيتنا ومهمتنا ومبادئ عملنا."
+  },
+  "spot": {
+    "tr": ""
+  },
+  "desc": {},
+  "title": {
+    "tr": "Kurumsal",
+    "en": "Company",
+    "ar": "الشركة"
+  },
+  "keyword": {
+    "tr": "kurumsal, hakkımızda, vizyon, misyon",
+    "en": "company, about, vision, mission",
+    "ar": "الشركة، من نحن، الرؤية، المهمة"
+  },
+  "text": {},
+  "update": "2026-11-05T23:41:35.525Z",
+  "date": "2026-05-19",
+  "icon": "apartment"
+}
