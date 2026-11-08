@@ -1,0 +1,43 @@
+{
+  "name": {
+    "tr": "Misyon",
+    "en": "Mission",
+    "ar": "المهمة"
+  },
+  "status": "play",
+  "id": "misyon",
+  "path": "misyon",
+  "category": "",
+  "text": {
+    "tr": "<h2>Misyonumuz</h2>\n<p>Misyonumuz, ekiplerin işini sade, görünür ve güvenli bir panoda toplamaktır.</p>",
+    "en": "<h2>Our mission</h2>\n<p>Our mission is to gather teams’ work on a simple, visible and secure board.</p>",
+    "ar": "<h2>مهمتنا</h2>\n<p>مهمتنا جمع عمل الفرق على لوحة بسيطة ومرئية وآمنة.</p>"
+  },
+  "desing": {
+    "header": [],
+    "body": [
+      "qc23ge"
+    ],
+    "footer": []
+  },
+  "desc": {},
+  "index": 1,
+  "icon": "policy",
+  "title": {
+    "tr": "Misyon",
+    "en": "Mission",
+    "ar": "المهمة"
+  },
+  "description": {
+    "tr": "Misyonumuz",
+    "en": "Our mission",
+    "ar": "مهمتنا"
+  },
+  "keyword": {
+    "tr": "",
+    "en": "",
+    "ar": ""
+  },
+  "update": "2026-11-05T23:41:35.529Z",
+  "date": "2026-05-19"
+}
