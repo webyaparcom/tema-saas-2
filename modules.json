@@ -31,7 +31,13 @@
         "logoimg": "",
         "tekSatir": "",
         "langcolor": "currentColor",
-        "langbg": "transparent"
+        "langbg": "transparent",
+        "logoDark": "",
+        "duzen": "",
+        "ctaText": "",
+        "ctaHref": "",
+        "temaDugmesi": "",
+        "temaAnahtar": ""
       },
       "version": "1.0.0",
       "icon": "menu"
@@ -495,6 +501,12 @@
           "tr": "(yeni sekmede açılır)",
           "en": "(opens in a new tab)",
           "ar": "(يفتح في علامة تبويب جديدة)"
+        },
+        "girisHref": "",
+        "girisText": {
+          "tr": "Üye Girişi",
+          "en": "Login",
+          "ar": "تسجيل الدخول"
         }
       },
       "veri": {
@@ -553,7 +565,10 @@
           "en": "Support weekdays 09:00 – 18:00 · Reply within 4 business hours",
           "ar": "الدعم أيام الأسبوع 09:00 – 18:00 · الرد خلال 4 ساعات عمل"
         },
-        "social": []
+        "social": [],
+        "bgcolor": "var(--mx-site-bg, #ffffff)",
+        "color": "var(--mx-site-text, #1b1b1b)",
+        "bordercolor": "color-mix(in srgb, var(--mx-site-text, #1b1b1b) 14%, transparent)"
       },
       "data": [],
       "veri": {
@@ -2184,15 +2199,11 @@
               "en": "Enterprise",
               "ar": "المؤسسات"
             },
-            "fiyat": {
-              "tr": "Teklif",
-              "en": "Quote",
-              "ar": "عرض"
-            },
+            "fiyat": "—",
             "fiyatNot": {
-              "tr": "yıllık sözleşme",
-              "en": "annual contract",
-              "ar": "عقد سنوي"
+              "tr": "teklifle · yıllık sözleşme",
+              "en": "by quote · annual contract",
+              "ar": "بعرض سعر · عقد سنوي"
             },
             "onerilen": false,
             "url": "demo-talebi"
