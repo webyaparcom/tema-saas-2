@@ -38,21 +38,21 @@
   <link rel="preload" href="/src/fonts/open-sans/open-sans-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/open-sans/open-sans-latin-ext-500-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/open-sans/open-sans-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/src/fonts/open-sans.css?v=jqp21" />
-  <link rel="stylesheet" href="/src/fonts/poppins.css?v=jqp21" />
-  <link rel="stylesheet" href="/src/fonts/ibm-plex-sans-arabic.css?v=jqp21" />
-  <link rel="stylesheet" href="/src/fonts/noto-kufi-arabic.css?v=jqp21" />
-  <link rel="stylesheet" href="/src/rubik.css?v=jqp21" />
-  <link rel="stylesheet" href="/src/css.css?v=jqp21" />
-  <link rel="stylesheet" href="/src/mx-ds.css?v=jqp21" />
+  <link rel="stylesheet" href="/src/fonts/open-sans.css?v=nerta" />
+  <link rel="stylesheet" href="/src/fonts/poppins.css?v=nerta" />
+  <link rel="stylesheet" href="/src/fonts/ibm-plex-sans-arabic.css?v=nerta" />
+  <link rel="stylesheet" href="/src/fonts/noto-kufi-arabic.css?v=nerta" />
+  <link rel="stylesheet" href="/src/rubik.css?v=nerta" />
+  <link rel="stylesheet" href="/src/css.css?v=nerta" />
+  <link rel="stylesheet" href="/src/mx-ds.css?v=nerta" />
   
-  <link rel="stylesheet" href="/src/mx-ui.css?v=jqp21" />
+  <link rel="stylesheet" href="/src/mx-ui.css?v=nerta" />
   <link rel="preload" href="/src/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=jqp21" />
+  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=nerta" />
   
-  <link rel="stylesheet" href="/src/cookie.css?v=jqp21" />
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=jqp21" />
-  <link rel="shortcut icon" href="/img/icon.png?v=jqp21" type="image/png" />
+  <link rel="stylesheet" href="/src/cookie.css?v=nerta" />
+  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=nerta" />
+  <link rel="shortcut icon" href="/img/icon.png?v=nerta" type="image/png" />
   <link rel="apple-touch-icon" href="/img/icon.png" />
   <script type="application/ld+json">
 {
@@ -115,7 +115,7 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=jqp21">
+<link rel="stylesheet" href="style.css?v=nerta">
 </head>
 
 <body>
@@ -229,6 +229,7 @@
       <nav class="h0001-m9-nav h0001-m9-nav--sag" aria-label="Navigation">
         <ul><li><a class="h0001-m9-oge" href="/en/veri-guvenligi/">Data Security</a></li><li><a class="h0001-m9-oge" href="/en/sss/">FAQ</a></li><li><a class="h0001-m9-oge" href="/en/galeri/">Product</a></li><li><a class="h0001-m9-oge" href="/en/iletisim/">Contact</a></li><li><a class="h0001-m9-oge" href="/en/kurumsal/">Company</a></li></ul>
       </nav>
+      
       <div class="h0001-m9-bar-dil"><nav class="wm-langbar" aria-label="Language Selector"><ul><li class="wm-lang-item"><a href="/tr/" hreflang="tr" lang="tr">TR</a></li><li class="wm-lang-item wm-lang-active"><a href="/en/" hreflang="en" lang="en" aria-current="true">EN</a></li><li class="wm-lang-item"><a href="/ar/" hreflang="ar" lang="ar">AR</a></li></ul></nav></div>
       <button class="h0001-m9-hamburger" type="button" aria-expanded="false" aria-controls="m9-wbzrzu-panel" aria-label="Toggle Menu">
         <span class="material-symbols-outlined" aria-hidden="true">menu</span>
@@ -280,6 +281,8 @@
     }
     if (dugme) { dugme.addEventListener("click", function () { if (panel && panel.hidden) { ac(); } else { kapa(); } }); }
     if (kapat) { kapat.addEventListener("click", kapa); }
+    
+    document.addEventListener("click", function (e) { if (panel && !panel.hidden && !panel.contains(e.target) && !(dugme && dugme.contains(e.target))) { kapa(); } });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") { kapa(); } });
     
     if (panel) {
@@ -461,7 +464,7 @@
     <p class="b0001-kt-hint" aria-hidden="true"><span class="material-symbols-outlined">swipe</span> Swipe the table sideways</p>
     <div class="b0001-kt-scroll" role="region" aria-label="Plan comparison table" tabindex="0">
       <table class="b0001-kt-table">
-        <thead><tr><th scope="col" class="b0001-kt-ilk">Feature</th><th scope="col" class="b0001-kt-paket"><span class="b0001-kt-rozet b0001-kt-rozet-bos" aria-hidden="true"></span><span class="b0001-kt-ad">Starter</span><span class="b0001-kt-fiyat"><bdi dir="ltr">₺149</bdi></span><span class="b0001-kt-fiyat-not">/ user / month</span></th><th scope="col" class="b0001-kt-paket b0001-kt-oner"><span class="b0001-kt-rozet">Recommended</span><span class="b0001-kt-ad">Team</span><span class="b0001-kt-fiyat"><bdi dir="ltr">₺299</bdi></span><span class="b0001-kt-fiyat-not">/ user / month</span></th><th scope="col" class="b0001-kt-paket"><span class="b0001-kt-rozet b0001-kt-rozet-bos" aria-hidden="true"></span><span class="b0001-kt-ad">Enterprise</span><span class="b0001-kt-fiyat"><bdi dir="ltr">[object Object]</bdi></span><span class="b0001-kt-fiyat-not">annual contract</span></th></tr></thead>
+        <thead><tr><th scope="col" class="b0001-kt-ilk">Feature</th><th scope="col" class="b0001-kt-paket"><span class="b0001-kt-rozet b0001-kt-rozet-bos" aria-hidden="true"></span><span class="b0001-kt-ad">Starter</span><span class="b0001-kt-fiyat"><bdi dir="ltr">₺149</bdi></span><span class="b0001-kt-fiyat-not">/ user / month</span></th><th scope="col" class="b0001-kt-paket b0001-kt-oner"><span class="b0001-kt-rozet">Recommended</span><span class="b0001-kt-ad">Team</span><span class="b0001-kt-fiyat"><bdi dir="ltr">₺299</bdi></span><span class="b0001-kt-fiyat-not">/ user / month</span></th><th scope="col" class="b0001-kt-paket"><span class="b0001-kt-rozet b0001-kt-rozet-bos" aria-hidden="true"></span><span class="b0001-kt-ad">Enterprise</span><span class="b0001-kt-fiyat"><bdi dir="ltr">—</bdi></span><span class="b0001-kt-fiyat-not">by quote · annual contract</span></th></tr></thead>
         <tbody><tr><th scope="row" class="b0001-kt-ilk">Unlimited boards</th><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Included</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Included</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Included</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">Timeline</th><td class=""><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">Not included</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Included</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Included</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">Advanced reports</th><td class=""><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">Not included</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Included</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Included</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">Roles and permissions</th><td class=""><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">Not included</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Included</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Included</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">Single sign-on (SSO)</th><td class=""><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">Not included</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">Not included</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Included</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">API and webhooks</th><td class=""><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">Not included</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">Not included</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Included</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">Data Processing Agreement</th><td class="">Standard</td><td class="b0001-kt-oner">Standard</td><td class="">Custom</td></tr><tr><th scope="row" class="b0001-kt-ilk">Auto-renewal notice</th><td class="">7 days before</td><td class="b0001-kt-oner">7 days before</td><td class="">30 days before</td></tr></tbody>
         <tfoot><tr><td class="b0001-kt-ilk"></td><td class=""><a class="b0001-kt-btn" href="/en/demo-talebi/">Request a demo</a></td><td class="b0001-kt-oner"><a class="b0001-kt-btn" href="/en/demo-talebi/">Request a demo</a></td><td class=""><a class="b0001-kt-btn" href="/en/demo-talebi/">Request a demo</a></td></tr></tfoot>
       </table>
@@ -779,10 +782,10 @@
   
 
   <script defer src="/src/swiper-bundle.min.js"></script>
-  <script defer src="/src/mx-ui.js?v=jqp21"></script>
-  <script defer src="/src/mx-store.js?v=jqp21"></script>
-  <script defer type="text/javascript" src="/src/js.js?v=jqp21"></script>
-  <script defer src="/src/cookie.js?v=jqp21"></script>
+  <script defer src="/src/mx-ui.js?v=nerta"></script>
+  <script defer src="/src/mx-store.js?v=nerta"></script>
+  <script defer type="text/javascript" src="/src/js.js?v=nerta"></script>
+  <script defer src="/src/cookie.js?v=nerta"></script>
 
 </body>
 

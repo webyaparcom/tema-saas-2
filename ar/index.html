@@ -38,21 +38,21 @@
   <link rel="preload" href="/src/fonts/open-sans/open-sans-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/open-sans/open-sans-latin-ext-500-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/open-sans/open-sans-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/src/fonts/open-sans.css?v=d62nm" />
-  <link rel="stylesheet" href="/src/fonts/poppins.css?v=d62nm" />
-  <link rel="stylesheet" href="/src/fonts/ibm-plex-sans-arabic.css?v=d62nm" />
-  <link rel="stylesheet" href="/src/fonts/noto-kufi-arabic.css?v=d62nm" />
-  <link rel="stylesheet" href="/src/rubik.css?v=d62nm" />
-  <link rel="stylesheet" href="/src/css.css?v=d62nm" />
-  <link rel="stylesheet" href="/src/mx-ds.css?v=d62nm" />
+  <link rel="stylesheet" href="/src/fonts/open-sans.css?v=tfup7" />
+  <link rel="stylesheet" href="/src/fonts/poppins.css?v=tfup7" />
+  <link rel="stylesheet" href="/src/fonts/ibm-plex-sans-arabic.css?v=tfup7" />
+  <link rel="stylesheet" href="/src/fonts/noto-kufi-arabic.css?v=tfup7" />
+  <link rel="stylesheet" href="/src/rubik.css?v=tfup7" />
+  <link rel="stylesheet" href="/src/css.css?v=tfup7" />
+  <link rel="stylesheet" href="/src/mx-ds.css?v=tfup7" />
   
-  <link rel="stylesheet" href="/src/mx-ui.css?v=d62nm" />
+  <link rel="stylesheet" href="/src/mx-ui.css?v=tfup7" />
   <link rel="preload" href="/src/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=d62nm" />
+  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=tfup7" />
   
-  <link rel="stylesheet" href="/src/cookie.css?v=d62nm" />
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=d62nm" />
-  <link rel="shortcut icon" href="/img/icon.png?v=d62nm" type="image/png" />
+  <link rel="stylesheet" href="/src/cookie.css?v=tfup7" />
+  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=tfup7" />
+  <link rel="shortcut icon" href="/img/icon.png?v=tfup7" type="image/png" />
   <link rel="apple-touch-icon" href="/img/icon.png" />
   <script type="application/ld+json">
 {
@@ -115,7 +115,7 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=d62nm">
+<link rel="stylesheet" href="style.css?v=tfup7">
 </head>
 
 <body>
@@ -229,6 +229,7 @@
       <nav class="h0001-m9-nav h0001-m9-nav--sag" aria-label="التنقل">
         <ul><li><a class="h0001-m9-oge" href="/ar/veri-guvenligi/">أمن البيانات</a></li><li><a class="h0001-m9-oge" href="/ar/sss/">الأسئلة الشائعة</a></li><li><a class="h0001-m9-oge" href="/ar/galeri/">المنتج</a></li><li><a class="h0001-m9-oge" href="/ar/iletisim/">اتصل بنا</a></li><li><a class="h0001-m9-oge" href="/ar/kurumsal/">الشركة</a></li></ul>
       </nav>
+      
       <div class="h0001-m9-bar-dil"><nav class="wm-langbar" aria-label="محدد اللغة"><ul><li class="wm-lang-item"><a href="/tr/" hreflang="tr" lang="tr">TR</a></li><li class="wm-lang-item"><a href="/en/" hreflang="en" lang="en">EN</a></li><li class="wm-lang-item wm-lang-active"><a href="/ar/" hreflang="ar" lang="ar" aria-current="true">AR</a></li></ul></nav></div>
       <button class="h0001-m9-hamburger" type="button" aria-expanded="false" aria-controls="m9-wbzrzu-panel" aria-label="تبديل القائمة">
         <span class="material-symbols-outlined" aria-hidden="true">menu</span>
@@ -280,6 +281,8 @@
     }
     if (dugme) { dugme.addEventListener("click", function () { if (panel && panel.hidden) { ac(); } else { kapa(); } }); }
     if (kapat) { kapat.addEventListener("click", kapa); }
+    
+    document.addEventListener("click", function (e) { if (panel && !panel.hidden && !panel.contains(e.target) && !(dugme && dugme.contains(e.target))) { kapa(); } });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") { kapa(); } });
     
     if (panel) {
@@ -461,7 +464,7 @@
     <p class="b0001-kt-hint" aria-hidden="true"><span class="material-symbols-outlined">swipe</span> اسحب الجدول جانبيًا</p>
     <div class="b0001-kt-scroll" role="region" aria-label="جدول مقارنة الباقات" tabindex="0">
       <table class="b0001-kt-table">
-        <thead><tr><th scope="col" class="b0001-kt-ilk">الميزة</th><th scope="col" class="b0001-kt-paket"><span class="b0001-kt-rozet b0001-kt-rozet-bos" aria-hidden="true"></span><span class="b0001-kt-ad">البداية</span><span class="b0001-kt-fiyat"><bdi dir="ltr">₺149</bdi></span><span class="b0001-kt-fiyat-not">/ مستخدم / شهريًا</span></th><th scope="col" class="b0001-kt-paket b0001-kt-oner"><span class="b0001-kt-rozet">موصى بها</span><span class="b0001-kt-ad">الفريق</span><span class="b0001-kt-fiyat"><bdi dir="ltr">₺299</bdi></span><span class="b0001-kt-fiyat-not">/ مستخدم / شهريًا</span></th><th scope="col" class="b0001-kt-paket"><span class="b0001-kt-rozet b0001-kt-rozet-bos" aria-hidden="true"></span><span class="b0001-kt-ad">المؤسسات</span><span class="b0001-kt-fiyat"><bdi dir="ltr">[object Object]</bdi></span><span class="b0001-kt-fiyat-not">عقد سنوي</span></th></tr></thead>
+        <thead><tr><th scope="col" class="b0001-kt-ilk">الميزة</th><th scope="col" class="b0001-kt-paket"><span class="b0001-kt-rozet b0001-kt-rozet-bos" aria-hidden="true"></span><span class="b0001-kt-ad">البداية</span><span class="b0001-kt-fiyat"><bdi dir="ltr">₺149</bdi></span><span class="b0001-kt-fiyat-not">/ مستخدم / شهريًا</span></th><th scope="col" class="b0001-kt-paket b0001-kt-oner"><span class="b0001-kt-rozet">موصى بها</span><span class="b0001-kt-ad">الفريق</span><span class="b0001-kt-fiyat"><bdi dir="ltr">₺299</bdi></span><span class="b0001-kt-fiyat-not">/ مستخدم / شهريًا</span></th><th scope="col" class="b0001-kt-paket"><span class="b0001-kt-rozet b0001-kt-rozet-bos" aria-hidden="true"></span><span class="b0001-kt-ad">المؤسسات</span><span class="b0001-kt-fiyat"><bdi dir="ltr">—</bdi></span><span class="b0001-kt-fiyat-not">بعرض سعر · عقد سنوي</span></th></tr></thead>
         <tbody><tr><th scope="row" class="b0001-kt-ilk">لوحات غير محدودة</th><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">مشمول</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">مشمول</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">مشمول</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">الجدول الزمني</th><td class=""><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">غير مشمول</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">مشمول</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">مشمول</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">تقارير متقدمة</th><td class=""><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">غير مشمول</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">مشمول</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">مشمول</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">أدوار وصلاحيات</th><td class=""><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">غير مشمول</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">مشمول</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">مشمول</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">تسجيل دخول موحد</th><td class=""><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">غير مشمول</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">غير مشمول</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">مشمول</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">API وwebhook</th><td class=""><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">غير مشمول</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">غير مشمول</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">مشمول</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">اتفاقية معالجة البيانات</th><td class="">قياسية</td><td class="b0001-kt-oner">قياسية</td><td class="">مخصصة</td></tr><tr><th scope="row" class="b0001-kt-ilk">إشعار التجديد التلقائي</th><td class="">قبل 7 أيام</td><td class="b0001-kt-oner">قبل 7 أيام</td><td class="">قبل 30 يومًا</td></tr></tbody>
         <tfoot><tr><td class="b0001-kt-ilk"></td><td class=""><a class="b0001-kt-btn" href="/ar/demo-talebi/">اطلب عرضًا تجريبيًا</a></td><td class="b0001-kt-oner"><a class="b0001-kt-btn" href="/ar/demo-talebi/">اطلب عرضًا تجريبيًا</a></td><td class=""><a class="b0001-kt-btn" href="/ar/demo-talebi/">اطلب عرضًا تجريبيًا</a></td></tr></tfoot>
       </table>
@@ -779,10 +782,10 @@
   
 
   <script defer src="/src/swiper-bundle.min.js"></script>
-  <script defer src="/src/mx-ui.js?v=d62nm"></script>
-  <script defer src="/src/mx-store.js?v=d62nm"></script>
-  <script defer type="text/javascript" src="/src/js.js?v=d62nm"></script>
-  <script defer src="/src/cookie.js?v=d62nm"></script>
+  <script defer src="/src/mx-ui.js?v=tfup7"></script>
+  <script defer src="/src/mx-store.js?v=tfup7"></script>
+  <script defer type="text/javascript" src="/src/js.js?v=tfup7"></script>
+  <script defer src="/src/cookie.js?v=tfup7"></script>
 
 </body>
 

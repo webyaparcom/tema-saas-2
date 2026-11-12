@@ -38,21 +38,21 @@
   <link rel="preload" href="/src/fonts/open-sans/open-sans-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/open-sans/open-sans-latin-ext-500-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/open-sans/open-sans-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/src/fonts/open-sans.css?v=s5fey" />
-  <link rel="stylesheet" href="/src/fonts/poppins.css?v=s5fey" />
-  <link rel="stylesheet" href="/src/fonts/ibm-plex-sans-arabic.css?v=s5fey" />
-  <link rel="stylesheet" href="/src/fonts/noto-kufi-arabic.css?v=s5fey" />
-  <link rel="stylesheet" href="/src/rubik.css?v=s5fey" />
-  <link rel="stylesheet" href="/src/css.css?v=s5fey" />
-  <link rel="stylesheet" href="/src/mx-ds.css?v=s5fey" />
+  <link rel="stylesheet" href="/src/fonts/open-sans.css?v=blr9r" />
+  <link rel="stylesheet" href="/src/fonts/poppins.css?v=blr9r" />
+  <link rel="stylesheet" href="/src/fonts/ibm-plex-sans-arabic.css?v=blr9r" />
+  <link rel="stylesheet" href="/src/fonts/noto-kufi-arabic.css?v=blr9r" />
+  <link rel="stylesheet" href="/src/rubik.css?v=blr9r" />
+  <link rel="stylesheet" href="/src/css.css?v=blr9r" />
+  <link rel="stylesheet" href="/src/mx-ds.css?v=blr9r" />
   
-  <link rel="stylesheet" href="/src/mx-ui.css?v=s5fey" />
+  <link rel="stylesheet" href="/src/mx-ui.css?v=blr9r" />
   <link rel="preload" href="/src/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=s5fey" />
+  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=blr9r" />
   
-  <link rel="stylesheet" href="/src/cookie.css?v=s5fey" />
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=s5fey" />
-  <link rel="shortcut icon" href="/img/icon.png?v=s5fey" type="image/png" />
+  <link rel="stylesheet" href="/src/cookie.css?v=blr9r" />
+  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=blr9r" />
+  <link rel="shortcut icon" href="/img/icon.png?v=blr9r" type="image/png" />
   <link rel="apple-touch-icon" href="/img/icon.png" />
   <script type="application/ld+json">
 {
@@ -115,7 +115,7 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=s5fey">
+<link rel="stylesheet" href="style.css?v=blr9r">
 </head>
 
 <body>
@@ -229,6 +229,7 @@
       <nav class="h0001-m9-nav h0001-m9-nav--sag" aria-label="Navigasyon">
         <ul><li><a class="h0001-m9-oge" href="/tr/veri-guvenligi/">Veri Güvenliği</a></li><li><a class="h0001-m9-oge" href="/tr/sss/">Sıkça Sorulan Sorular</a></li><li><a class="h0001-m9-oge" href="/tr/galeri/">Ürün</a></li><li><a class="h0001-m9-oge" href="/tr/iletisim/">İletişim</a></li><li><a class="h0001-m9-oge" href="/tr/kurumsal/">Kurumsal</a></li></ul>
       </nav>
+      
       <div class="h0001-m9-bar-dil"><nav class="wm-langbar" aria-label="Dil Seçici"><ul><li class="wm-lang-item wm-lang-active"><a href="/tr/" hreflang="tr" lang="tr" aria-current="true">TR</a></li><li class="wm-lang-item"><a href="/en/" hreflang="en" lang="en">EN</a></li><li class="wm-lang-item"><a href="/ar/" hreflang="ar" lang="ar">AR</a></li></ul></nav></div>
       <button class="h0001-m9-hamburger" type="button" aria-expanded="false" aria-controls="m9-wbzrzu-panel" aria-label="Menüyü Aç/Kapat">
         <span class="material-symbols-outlined" aria-hidden="true">menu</span>
@@ -280,6 +281,8 @@
     }
     if (dugme) { dugme.addEventListener("click", function () { if (panel && panel.hidden) { ac(); } else { kapa(); } }); }
     if (kapat) { kapat.addEventListener("click", kapa); }
+    
+    document.addEventListener("click", function (e) { if (panel && !panel.hidden && !panel.contains(e.target) && !(dugme && dugme.contains(e.target))) { kapa(); } });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") { kapa(); } });
     
     if (panel) {
@@ -461,7 +464,7 @@
     <p class="b0001-kt-hint" aria-hidden="true"><span class="material-symbols-outlined">swipe</span> Tabloyu yana kaydırın</p>
     <div class="b0001-kt-scroll" role="region" aria-label="Paket karşılaştırma tablosu" tabindex="0">
       <table class="b0001-kt-table">
-        <thead><tr><th scope="col" class="b0001-kt-ilk">Özellik</th><th scope="col" class="b0001-kt-paket"><span class="b0001-kt-rozet b0001-kt-rozet-bos" aria-hidden="true"></span><span class="b0001-kt-ad">Başlangıç</span><span class="b0001-kt-fiyat"><bdi dir="ltr">₺149</bdi></span><span class="b0001-kt-fiyat-not">/ kullanıcı / ay</span></th><th scope="col" class="b0001-kt-paket b0001-kt-oner"><span class="b0001-kt-rozet">Önerilen</span><span class="b0001-kt-ad">Ekip</span><span class="b0001-kt-fiyat"><bdi dir="ltr">₺299</bdi></span><span class="b0001-kt-fiyat-not">/ kullanıcı / ay</span></th><th scope="col" class="b0001-kt-paket"><span class="b0001-kt-rozet b0001-kt-rozet-bos" aria-hidden="true"></span><span class="b0001-kt-ad">Kurumsal</span><span class="b0001-kt-fiyat"><bdi dir="ltr">[object Object]</bdi></span><span class="b0001-kt-fiyat-not">yıllık sözleşme</span></th></tr></thead>
+        <thead><tr><th scope="col" class="b0001-kt-ilk">Özellik</th><th scope="col" class="b0001-kt-paket"><span class="b0001-kt-rozet b0001-kt-rozet-bos" aria-hidden="true"></span><span class="b0001-kt-ad">Başlangıç</span><span class="b0001-kt-fiyat"><bdi dir="ltr">₺149</bdi></span><span class="b0001-kt-fiyat-not">/ kullanıcı / ay</span></th><th scope="col" class="b0001-kt-paket b0001-kt-oner"><span class="b0001-kt-rozet">Önerilen</span><span class="b0001-kt-ad">Ekip</span><span class="b0001-kt-fiyat"><bdi dir="ltr">₺299</bdi></span><span class="b0001-kt-fiyat-not">/ kullanıcı / ay</span></th><th scope="col" class="b0001-kt-paket"><span class="b0001-kt-rozet b0001-kt-rozet-bos" aria-hidden="true"></span><span class="b0001-kt-ad">Kurumsal</span><span class="b0001-kt-fiyat"><bdi dir="ltr">—</bdi></span><span class="b0001-kt-fiyat-not">teklifle · yıllık sözleşme</span></th></tr></thead>
         <tbody><tr><th scope="row" class="b0001-kt-ilk">Sınırsız pano</th><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Dahil</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Dahil</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Dahil</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">Zaman çizelgesi</th><td class=""><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">Dahil değil</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Dahil</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Dahil</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">Gelişmiş raporlar</th><td class=""><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">Dahil değil</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Dahil</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Dahil</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">Roller ve yetkiler</th><td class=""><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">Dahil değil</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Dahil</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Dahil</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">Tek oturum açma (SSO)</th><td class=""><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">Dahil değil</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">Dahil değil</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Dahil</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">API ve webhook</th><td class=""><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">Dahil değil</span></span></td><td class="b0001-kt-oner"><span class="b0001-kt-hayir"><span class="material-symbols-outlined" aria-hidden="true">close</span><span class="b0001-kt-sr">Dahil değil</span></span></td><td class=""><span class="b0001-kt-evet"><span class="material-symbols-outlined" aria-hidden="true">check</span><span class="b0001-kt-sr">Dahil</span></span></td></tr><tr><th scope="row" class="b0001-kt-ilk">Veri İşleme Sözleşmesi</th><td class="">Standart</td><td class="b0001-kt-oner">Standart</td><td class="">Özel</td></tr><tr><th scope="row" class="b0001-kt-ilk">Otomatik yenileme bildirimi</th><td class="">7 gün önce</td><td class="b0001-kt-oner">7 gün önce</td><td class="">30 gün önce</td></tr></tbody>
         <tfoot><tr><td class="b0001-kt-ilk"></td><td class=""><a class="b0001-kt-btn" href="/tr/demo-talebi/">Demo talep et</a></td><td class="b0001-kt-oner"><a class="b0001-kt-btn" href="/tr/demo-talebi/">Demo talep et</a></td><td class=""><a class="b0001-kt-btn" href="/tr/demo-talebi/">Demo talep et</a></td></tr></tfoot>
       </table>
@@ -779,10 +782,10 @@
   
 
   <script defer src="/src/swiper-bundle.min.js"></script>
-  <script defer src="/src/mx-ui.js?v=s5fey"></script>
-  <script defer src="/src/mx-store.js?v=s5fey"></script>
-  <script defer type="text/javascript" src="/src/js.js?v=s5fey"></script>
-  <script defer src="/src/cookie.js?v=s5fey"></script>
+  <script defer src="/src/mx-ui.js?v=blr9r"></script>
+  <script defer src="/src/mx-store.js?v=blr9r"></script>
+  <script defer type="text/javascript" src="/src/js.js?v=blr9r"></script>
+  <script defer src="/src/cookie.js?v=blr9r"></script>
 
 </body>
 

@@ -38,21 +38,21 @@
   <link rel="preload" href="/src/fonts/open-sans/open-sans-latin-ext-400-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/open-sans/open-sans-latin-ext-500-normal.woff2" as="font" type="font/woff2" crossorigin />
   <link rel="preload" href="/src/fonts/open-sans/open-sans-latin-ext-700-normal.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/src/fonts/open-sans.css?v=gsl48" />
-  <link rel="stylesheet" href="/src/fonts/poppins.css?v=gsl48" />
-  <link rel="stylesheet" href="/src/fonts/ibm-plex-sans-arabic.css?v=gsl48" />
-  <link rel="stylesheet" href="/src/fonts/noto-kufi-arabic.css?v=gsl48" />
-  <link rel="stylesheet" href="/src/rubik.css?v=gsl48" />
-  <link rel="stylesheet" href="/src/css.css?v=gsl48" />
-  <link rel="stylesheet" href="/src/mx-ds.css?v=gsl48" />
+  <link rel="stylesheet" href="/src/fonts/open-sans.css?v=q84yw" />
+  <link rel="stylesheet" href="/src/fonts/poppins.css?v=q84yw" />
+  <link rel="stylesheet" href="/src/fonts/ibm-plex-sans-arabic.css?v=q84yw" />
+  <link rel="stylesheet" href="/src/fonts/noto-kufi-arabic.css?v=q84yw" />
+  <link rel="stylesheet" href="/src/rubik.css?v=q84yw" />
+  <link rel="stylesheet" href="/src/css.css?v=q84yw" />
+  <link rel="stylesheet" href="/src/mx-ds.css?v=q84yw" />
   
-  <link rel="stylesheet" href="/src/mx-ui.css?v=gsl48" />
+  <link rel="stylesheet" href="/src/mx-ui.css?v=q84yw" />
   <link rel="preload" href="/src/material-symbols-outlined.woff2" as="font" type="font/woff2" crossorigin />
-  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=gsl48" />
+  <link rel="stylesheet" href="/src/material-symbols-outlined.css?v=q84yw" />
   
-  <link rel="stylesheet" href="/src/cookie.css?v=gsl48" />
-  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=gsl48" />
-  <link rel="shortcut icon" href="/img/icon.png?v=gsl48" type="image/png" />
+  <link rel="stylesheet" href="/src/cookie.css?v=q84yw" />
+  <link rel="stylesheet" href="/src/swiper-bundle.min.css?v=q84yw" />
+  <link rel="shortcut icon" href="/img/icon.png?v=q84yw" type="image/png" />
   <link rel="apple-touch-icon" href="/img/icon.png" />
   <script type="application/ld+json">
 {
@@ -110,7 +110,7 @@
         "@type": "ImageObject",
         "url": "https://saas-2.webyapar.com/img/logo.png"
       },
-      "dateModified": "2026-11-05T23:41:35.480Z",
+      "dateModified": "2026-11-12T07:36:49.325Z",
       "breadcrumb": {
         "@id": "https://saas-2.webyapar.com/en/fiyatlar/#breadcrumb"
       }
@@ -137,7 +137,7 @@
 }
 </script>
   
-<link rel="stylesheet" href="style.css?v=gsl48">
+<link rel="stylesheet" href="style.css?v=q84yw">
 </head>
 
 <body>
@@ -251,6 +251,7 @@
       <nav class="h0001-m9-nav h0001-m9-nav--sag" aria-label="Navigation">
         <ul><li><a class="h0001-m9-oge" href="/en/veri-guvenligi/">Data Security</a></li><li><a class="h0001-m9-oge" href="/en/sss/">FAQ</a></li><li><a class="h0001-m9-oge" href="/en/galeri/">Product</a></li><li><a class="h0001-m9-oge" href="/en/iletisim/">Contact</a></li><li><a class="h0001-m9-oge" href="/en/kurumsal/">Company</a></li></ul>
       </nav>
+      
       <div class="h0001-m9-bar-dil"><nav class="wm-langbar" aria-label="Language Selector"><ul><li class="wm-lang-item"><a href="/tr/fiyatlar/" hreflang="tr" lang="tr">TR</a></li><li class="wm-lang-item wm-lang-active"><a href="/en/fiyatlar/" hreflang="en" lang="en" aria-current="true">EN</a></li><li class="wm-lang-item"><a href="/ar/fiyatlar/" hreflang="ar" lang="ar">AR</a></li></ul></nav></div>
       <button class="h0001-m9-hamburger" type="button" aria-expanded="false" aria-controls="m9-wbzrzu-panel" aria-label="Toggle Menu">
         <span class="material-symbols-outlined" aria-hidden="true">menu</span>
@@ -302,6 +303,8 @@
     }
     if (dugme) { dugme.addEventListener("click", function () { if (panel && panel.hidden) { ac(); } else { kapa(); } }); }
     if (kapat) { kapat.addEventListener("click", kapa); }
+    
+    document.addEventListener("click", function (e) { if (panel && !panel.hidden && !panel.contains(e.target) && !(dugme && dugme.contains(e.target))) { kapa(); } });
     document.addEventListener("keydown", function (e) { if (e.key === "Escape") { kapa(); } });
     
     if (panel) {
@@ -540,10 +543,10 @@
   
 
   <script defer src="/src/swiper-bundle.min.js"></script>
-  <script defer src="/src/mx-ui.js?v=gsl48"></script>
-  <script defer src="/src/mx-store.js?v=gsl48"></script>
-  <script defer type="text/javascript" src="/src/js.js?v=gsl48"></script>
-  <script defer src="/src/cookie.js?v=gsl48"></script>
+  <script defer src="/src/mx-ui.js?v=q84yw"></script>
+  <script defer src="/src/mx-store.js?v=q84yw"></script>
+  <script defer type="text/javascript" src="/src/js.js?v=q84yw"></script>
+  <script defer src="/src/cookie.js?v=q84yw"></script>
 
 </body>
 
