@@ -1539,3 +1539,4 @@
   @media (max-width: 480px) { .f0001-dk { font-size: 13px; } }
   @media (prefers-reduced-motion: reduce) { .f0001-dk-cta { transition: none; } .f0001-dk-cta:hover { gap: 4px; } }
 
+#header [class*="-m9--kutulu"] [class*="-m9-bar"] a[class$="-m9-oge"][aria-current="page"]{color:var(--mx-site-primary-contrast, #ffffff)}
